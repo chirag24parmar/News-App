@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
 import 'package:news_app/models/categorie_model.dart';
 import 'package:news_app/views/article_view.dart';
+import 'package:news_app/views/category_news.dart';
 import 'package:news_app/views/helper/data.dart';
 import 'package:news_app/views/helper/news.dart';
 
@@ -108,12 +109,21 @@ class _HomeState extends State<Home> {
 
 class CategoryTile extends StatelessWidget {
   final imageURL, categoryName;
-  CategoryTile({this.imageURL, this.categoryName});
+  CategoryTile({required this.imageURL, required this.categoryName});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CategoryNews(
+              category: categoryName.toString().toLowerCase(),
+            ),
+          ),
+        );
+      },
       child: Container(
         margin: EdgeInsets.only(right: 16),
         child: Stack(
@@ -161,16 +171,16 @@ class BlogTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ArticleView(
-              blogUrl: Url,
-            ),
-          ),
-        );
-      },
+      // onTap: () {
+      //   Navigator.push(
+      //     context,
+      //     MaterialPageRoute(
+      //       builder: (context) => ArticleView(
+      //         blogUrl: Url,
+      //       ),
+      //     ),
+      //   );
+      // },
       child: Container(
         margin: EdgeInsets.only(bottom: 16),
         child: Column(

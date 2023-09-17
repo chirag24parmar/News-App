@@ -1,7 +1,7 @@
-import 'dart:async';
+// import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
 
 class ArticleView extends StatefulWidget {
   final String blogUrl;
@@ -12,21 +12,16 @@ class ArticleView extends StatefulWidget {
 }
 
 class _ArticleViewState extends State<ArticleView> {
-  // final Completer<WebViewController> _completer =
+  // final Completer<WebViewController> _controller =
   //     Completer<WebViewController>();
-  // get blogUrl => null;
-
-  late final WebViewController controller;
-
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: WebViewWidget(
-      controller: controller,
-
-      // onWebViewCreated : ((WebViewController WebViewController{})),
-      // controller: blogUrl,
-    )
+        // child: WebView(
+        //   initialUrl: widget.blogUrl,
+        // onWebViewCreated: (WebViewController webViewController) {
+        //   _controller.complete(webViewController);
+        // },
         // ),
         );
   }
