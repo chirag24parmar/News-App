@@ -1,4 +1,4 @@
-#📰 Flutter News App with News API 📱
+##📰 Flutter News App with News API 📱
 
 This Flutter application provides a sleek and intuitive interface for browsing the latest news articles from various sources, powered by the News API. Stay updated with the latest headlines, explore different categories, and read articles on topics that interest you.
 
