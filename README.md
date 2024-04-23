@@ -20,3 +20,13 @@ This Flutter application provides a sleek and intuitive interface for browsing t
 
 # Contributing:
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve the app.
+
+# Screen Shots of the project
+#### Home Screen
+![Screenshot_20240423_195811](https://github.com/chirag24parmar/News-App/assets/89308061/ae8731ba-e56f-4024-8598-0f41c52ad745)
+
+#### Different category
+![Screenshot_20240423_195846](https://github.com/chirag24parmar/News-App/assets/89308061/03672440-3554-4900-a0b2-7b6c2928ac6a)
+
+
+
